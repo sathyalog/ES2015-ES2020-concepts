@@ -11,3 +11,4 @@ ___
 ### List of Concepts
 
 1. Template Literals
+2. Objects Desctructuring
