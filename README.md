@@ -18,3 +18,4 @@ ___
 6. For in Loop(not ES6)
 7. Spread Operator
 8. Rest Parameter/ Rest Operator
+9. Arrow Functions
