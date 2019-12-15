@@ -1,4 +1,4 @@
-## ES2015 to ES2020 Concepts and its features
+## ES2015 to ES2020 Useful Concepts and its features
 
 #### How to run?
 
@@ -14,3 +14,4 @@ ___
 2. Objects Destructuring
 3. Arrays Destructuring
 4. Object Literal
+5. For of Loop

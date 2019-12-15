@@ -8,49 +8,41 @@
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <title>Object Literal</title>
+    <title>For of Loop</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row" style="width:1448px;margin:0 auto">
         <div class="alert alert-primary col-md-12" role="alert">
-          Object Literal
+          For of Loop
         </div>
         <div>
           <blockquote class="blockquote">
             <p class="mb-0">
-                    Object literals make it easy to quickly create objects with properties inside the curly braces. To create an object, we simply notate a list of key: value pairs delimited by comma. ES6 makes the declaring of object literals concise and thus easier. 
+                Before ES5, developers iterate using <br/>for(i='0';i<'2';i++)<br/>
+                With ES5, <b>forEach</b> introduced and in ES6 <b>for-of, for-in</b> introduced. <br/>
+                The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. 
             </p>
           </blockquote>
-<code>Using ES5</code>
+<code>Using ES5 forEach</code>
 <pre>
-function getLaptop(make, model, year) {
-    return {
-        make: make,
-        model: model,
-        year: year
-    }
-}
-
-getLaptop("Apple", "MacBook", "2015");
-
-            </pre>
-          <p class="lead">
+const incomes = [65000, 85000, 120000];
+incomes.forEach(function (value) {
+    console.log(value);
+});
+</pre>
+        <p class="lead">
             <code>
-               Using Object Literals(ES6):
+               Using for-of-loop(ES6):
             </code> <br/>
-<pre>function getLaptop(make, model, year) {
-    return {
-        make,
-        model,
-        year
-    }
+        <pre>
+for(income of incomes) {
+    console.log(income);
 }
-    </pre>
-    <pre>getLaptop("Apple", "MacBook", "2015");</pre> 
-    <samp>Object literals gives us the ability to keep the keys same as values. ES5 make:make, model:model can be written as simple as make,model<samp>         
-          </p>
+        </pre>
+        </p>
         </div>
+        <samp>For-of-loop can be used to iterate arrays, strings, maps, sets. Please check JavaScript file for more details</samp>
         <div class="clearfix">
           <details
             ><summary>More Details</summary>
