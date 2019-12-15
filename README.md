@@ -11,4 +11,5 @@ ___
 ### List of Concepts
 
 1. Template Literals
-2. Objects Desctructuring
+2. Objects Destructuring
+3. Arrays Destructuring
