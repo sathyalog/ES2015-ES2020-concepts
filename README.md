@@ -13,3 +13,4 @@ ___
 1. Template Literals
 2. Objects Destructuring
 3. Arrays Destructuring
+4. Object Literal
