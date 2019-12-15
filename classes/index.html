@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Classes</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="width:1448px;margin:0 auto">
+        <div class="alert alert-primary col-md-12" role="alert">
+          Classes
+        </div>
+        <div>
+          <blockquote class="blockquote">
+            <p class="mb-0">
+                    Class: It is the before the plan of creating any objects which are known as blueprint of any objects which you want to create.
+            </p>
+          </blockquote>
+          <p class="lead">
+            <code>
+               ES5 Constructor function:
+            </code> <br/>
+    <pre>
+// ES5 Constructor Function
+function Person(name) {
+    this.name = name;
+}
+
+// ES5 adding a method to the Person prototype
+Person.prototype.walk = function() {
+  console.log(this.name + ' is walking.');
+}
+            
+var employee = new Person('Sathya');
+console.log(employee.name);  // Outputs 'Sathya'
+employee.walk(); // Outputs 'Sathya is walking.'
+            
+    </pre>
+</p>
+<p class="lead">
+            <code>
+                    ES2015/ES6 Classes:
+                 </code> <br/>
+                 <pre>
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    get fname() {
+        return this.name.toUpperCase();
+    }
+    walk() {
+        console.log(this.name + ' is walking.');
+    }
+    static test() {
+        console.log('static keyword helps to call a method from class without even instantiaion')
+    }
+}
+
+Person.test(); <small>//static keyword helps to call a method from class without even instantiaion  </small>           
+let employee = new Person('Sathya');
+employee.walk(); <small>Outputs 'Sathya is walking.'</small>
+console.log(employee.fname);<small> Outputs SATHYA</small>
+
+<kbd>ES6 classes brings a new syntax for getters and setters on object properties. Get and set allows us to run code on the reading or writing of a property. </kbd>
+            
+    </pre> 
+    <samp>
+        Using <b>static</b> can allow to access the method without instantiation. For more verify JS file.<br/>
+        To access or modify a property we would use a getter (access) or a setter (modify), which are specific methods we define in our class.
+    <samp>         
+          </p>
+        </div>
+        <div class="w-100">
+          <details
+            ><summary>More Details</summary>
+            <p>Please check console and verify JavaScript file</p></details>
+        </div>
+        <div class="w-100" style="margin-top:20px">
+          <button type="button" class="btn btn-dark">
+            <a
+              href="http://localhost:1234/"
+              style="text-decoration: none;color:white">Back</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
