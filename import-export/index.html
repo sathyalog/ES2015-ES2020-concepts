@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Import & Export</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="width:1448px;margin:0 auto">
+        <div class="alert alert-primary col-md-12" role="alert">
+          Import & Export
+        </div>
+        <div>
+          
+          <span>
+                The static <b>import</b> statement is used to import bindings which are exported by another module.<br/>
+                The <b>export</b> statement is used when creating JavaScript modules to export functions, objects, or primitive values from the module so they can be used by other programs with the import statement.
+          </span>
+        <p class="lead">
+            <code>
+               Import & Export:
+            </code> <br/>
+        <pre>
+<b>Types of Imports:</b><br/>
+    1.Import an entire module's contents.<br/>
+        Eg:import * as myModule from '/modules/my-module.js';<br/>
+    2.Import a single export from a module<br/>
+        Eg:import {myExport} from '/modules/my-module.js';<br/>
+    3.Import multiple exports from module<br/>
+        Eg:import {foo, bar} from '/modules/my-module.js';<br/>
+    4.Import an export with a more convenient alias<br/>
+        Eg:import {reallyReallyLongModuleExportName as shortName} from '/modules/my-module.js';<br/>
+    5.Import a module for its side effects only<br/>
+        Eg:import '/modules/my-module.js';<br/>
+    6. Dynamic Imports<br/>
+        Eg: import('/modules/my-module.js')
+                .then((module) => {
+                    // Do something with the module.
+            });
+<b>Types of exports:</b><br/>
+    1.Named Exports (Zero or more exports per module)<br/>
+    2.Default Exports (One per module)
+        </pre>
+        </p>
+        </div>
+        <samp>
+            The import statement cannot be used in embedded scripts unless such script has a type="module".<br/>     
+        </samp>
+        <div class="w-100">
+          <details
+            ><summary>More Details</summary>
+            <p>Please check console and verify JavaScript file</p></details>
+        </div>
+        <div class="w-100" style="margin-top:20px">
+          <button type="button" class="btn btn-dark">
+            <a
+              href="http://localhost:1234/"
+              style="text-decoration: none;color:white">Back</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
