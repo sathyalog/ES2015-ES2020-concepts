@@ -21,3 +21,4 @@ ___
 9. Arrow Functions
 10. Default Params
 11. Includes
+12. Let & Const
