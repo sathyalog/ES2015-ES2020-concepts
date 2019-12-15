@@ -1,4 +1,4 @@
-function add(x, y = 3) {
+add = (x, y = 3) => {
     console.log(x + y);
 }
     
@@ -22,5 +22,16 @@ function addToGuestListWithoutDefault(guests, list) {
   
 addToGuestListWithoutDefault(['Bob', 'Andy']); // ['Bob', 'Andy', undefined]
 addToGuestListWithoutDefault(['Bob', 'Andy'], ['Roger']); // ['Bob', 'Andy', Roger]
+
+//below example will throw error if you do not pass default params. Replace numArray=[] with numArray to see error. Hence using defaultParams is a best practise.
+addTotal = (numArray = []) => {
+    let total = 0;
+    for(element of numArray) {
+        total += element;
+    }
+    console.log(total);
+}
+
+addTotal();
   
   

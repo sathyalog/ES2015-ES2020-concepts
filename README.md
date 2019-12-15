@@ -19,4 +19,4 @@ ___
 7. Spread Operator
 8. Rest Parameter/ Rest Operator
 9. Arrow Functions
-10.Default Params
+10. Default Params

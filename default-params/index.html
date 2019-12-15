@@ -30,7 +30,7 @@
                Default Params:
             </code> <br/>
         <pre>
-function add(x, y = 3) {
+add = (x, y = 3) => {
     console.log(x + y);
 }
     
@@ -38,6 +38,17 @@ add(3, 9); // 12
 add(3) // 6
 add(12, undefined) // 15
 add(undefined, 8); // NaN, x doesn't have a default value
+
+addTotal = (numArray = []) => {
+    let total = 0;
+    for(element of numArray) {
+        total += element;
+    }
+    console.log(total);
+}
+
+addTotal();
+<kbd>Replace numArray=[] in function add with numArray to see error. Hence using defaultParams is a best practise.</kbd>
         </pre>
         </p>
         </div>
