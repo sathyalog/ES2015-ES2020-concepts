@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Array Includes</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="width:1448px;margin:0 auto">
+        <div class="alert alert-primary col-md-12" role="alert">
+          Array Includes
+        </div>
+        <div>
+          <blockquote class="blockquote">
+            <p class="mb-0">
+                    It determines whether an array contains a given element and returns either true or false.
+            </p>
+          </blockquote>
+          <span>
+                ES6 (ECMAScript 6) introduced Array Includes as a replacement for indexOf method in JavaScript.
+          </span>
+        <p class="lead">
+            <code>
+               Array Includes:
+            </code> <br/>
+        <pre>
+let numbers = [1,2,3,4,5,6];
+
+numbers.includes(0) // false
+numbers.includes(4) // true
+        </pre>
+        </p>
+        </div>
+        <samp>ES5 indexOf method either returns -1 or its index position. This ES6 includes will return either true or false.</samp>
+        <div class="w-100">
+          <details
+            ><summary>More Details</summary>
+            <p>Please check console and verify JavaScript file</p></details>
+        </div>
+        <div class="w-100" style="margin-top:20px">
+          <button type="button" class="btn btn-dark">
+            <a
+              href="http://localhost:1234/"
+              style="text-decoration: none;color:white">Back</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
