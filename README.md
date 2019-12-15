@@ -15,3 +15,4 @@ ___
 3. Arrays Destructuring
 4. Object Literal
 5. For of Loop
+6. For in Loop
