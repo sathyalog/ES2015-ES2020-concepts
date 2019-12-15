@@ -16,14 +16,14 @@ ___
 4. Object Literal
 5. For of Loop
 6. For in Loop(not ES6)
-7. Spread Operator
-8. Rest Parameter/ Rest Operator
+7. Spread Operator(ES8)
+8. Rest Parameter/ Rest Operator(ES8)
 9. Arrow Functions
 10. Default Params
 11. Includes
 12. Let & Const
 13. Import & Export
-14. padStart & padEnd
+14. padStart & padEnd(ES7)
 15. Classes
-16. Async & Await
+16. Async & Await(ES8)
 17. Sets
