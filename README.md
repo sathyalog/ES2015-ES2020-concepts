@@ -27,3 +27,4 @@ ___
 15. Classes
 16. Async & Await(ES8)
 17. Sets
+18. Private Fields and Methods(ES2020)
