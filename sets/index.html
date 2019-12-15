@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Sets</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="width:1448px;margin:0 auto">
+        <div class="alert alert-primary col-md-12" role="alert">
+          Sets
+        </div>
+        <div>
+          <blockquote class="blockquote">
+            <p class="mb-0">
+                Sets are a new object type with ES6 (ES2015) that allow to create collections of unique values. The values in a set can be either simple primitives like strings or integers, but more complex object types like object literals or arrays can also be part of a set.
+            </p>
+          </blockquote>
+          <span>
+                Here’s a simple example showing off a basic set and a few of the available methods on it like add, size, has, forEach, delete and clear
+          </span>
+        <p class="lead">
+            <code>
+               Sets:
+            </code> <br/>
+        <pre>
+const exampleSet = new Set([1,1,1,1,2,2,2,2]);
+console.log(exampleSet.size);//2
+console.log(exampleSet.add(5).add(17)); //Set(4) [ 1, 2, 5, 17 ]
+console.log(exampleSet.size); //4
+console.log(exampleSet.has(5)); //true
+console.log(exampleSet.delete(5));
+console.log(exampleSet.size); //3
+exampleSet.clear(); 
+console.log(exampleSet.size); //0
+        </pre>
+        </p>
+        </div>
+        <br/>
+        <div class="w-100">
+          <details
+            ><summary>More Details</summary>
+            <p>Please check console and verify JavaScript file</p></details>
+        </div>
+        <div class="w-100" style="margin-top:20px">
+          <button type="button" class="btn btn-dark">
+            <a
+              href="http://localhost:1234/"
+              style="text-decoration: none;color:white">Back</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
