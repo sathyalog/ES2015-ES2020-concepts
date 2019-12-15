@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>padStart & padEnd</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="width:1448px;margin:0 auto">
+        <div class="alert alert-primary col-md-12" role="alert">
+          padStart & padEnd
+        </div>
+        <div>
+          <blockquote class="blockquote">
+            <p class="mb-0">
+                    padStart and padEnd are two new methods available on JavaScript strings. As their name implies, they allow for formatting a string by adding padding characters at the start or the end. Keep in mind that these two methods are new and browser support is still very limited.
+            </p>
+          </blockquote>
+          <span>
+                The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.<br/>
+                The padEnd() method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of the current string.
+          </span>
+        <p class="lead">
+            <code>
+               padStart & padEnd:
+            </code> <br/>
+        <pre>
+<b>Syntax: str.padStart(targetLength [, padString])</b>
+"Dog!".padStart(10); // "      Dog!"
+"Dog!".padEnd(14, ' Woof'); // "Dog! Woof Woof"
+const fullNumber = '2034399002125581';
+const last4Digits = fullNumber.slice(-4);
+const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+
+console.log(maskedNumber); // expected output: "************5581"
+
+<b>Syntax: str.padEnd(targetLength [, padString])</b>
+const str1 = 'Breaded Mushrooms';
+
+console.log(str1.padEnd(25, '.')); // expected output: "Breaded Mushrooms........"
+        </pre>
+        </p>
+        </div>
+        <samp><b>Parameters:</b><br/>
+            <small>targetLength<br/>
+            The length of the resulting string once the current string has been padded. If the value is less than the current string's length, the current string is returned as is.<br/>
+            padString[Optional]<br/>
+            The string to pad the current string with. If this padding string is too long to stay within the targetLength, it will be truncated from the end. The default value is " " (U+0020 'SPACE'). <br/>
+            </small>
+        </samp>
+        <div class="w-100">
+          <details
+            ><summary>More Details</summary>
+            <p>Please check console and verify JavaScript file</p></details>
+        </div>
+        <div class="w-100" style="margin-top:20px">
+          <button type="button" class="btn btn-dark">
+            <a
+              href="http://localhost:1234/"
+              style="text-decoration: none;color:white">Back</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
