@@ -17,3 +17,4 @@ ___
 5. For of Loop
 6. For in Loop(not ES6)
 7. Spread Operator
+8. Rest Parameter/ Rest Operator
