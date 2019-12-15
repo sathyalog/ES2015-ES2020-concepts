@@ -27,4 +27,16 @@ ___
 15. Classes
 16. Async & Await(ES8)
 17. Sets
-18. Private Fields and Methods(ES2020)
+18. Private Fields and Methods(ES2020) - https://github.com/tc39/proposal-private-methods
+19. Optional Catch(ES2020)
+    -Not using the exception? No need to bind it now! See 'No Params' in catch
+    `try {
+  return JSON.parse(await readFile(optionalConfigFilePath))
+} catch {
+  return {}
+}`
+20. Decorators(ES2020) - Function decorators allow you to enhance existing functions without modification to the original function.
+More: https://github.com/tc39/proposal-decorators
+21. Numeric Separator - This feature enables developers to make their numeric literals more readable by creating a visual separation between groups of digits.
+    **Current behavior:** const AMOUNT = 1234500;
+    **ES2020 Proposal:** let amount = 1_234_500; 
