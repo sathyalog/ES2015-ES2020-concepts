@@ -25,3 +25,4 @@ ___
 13. Import & Export
 14. padStart & padEnd
 15. Classes
+16. Async & Await
