@@ -38,5 +38,13 @@ ___
 20. Decorators(ES2020) - Function decorators allow you to enhance existing functions without modification to the original function.
 More: https://github.com/tc39/proposal-decorators
 21. Numeric Separator - This feature enables developers to make their numeric literals more readable by creating a visual separation between groups of digits.
+
     **Current behavior:** const AMOUNT = 1234500;
+
     **ES2020 Proposal:** let amount = 1_234_500; 
+    More: https://github.com/tc39/proposal-numeric-separator
+
+Please refer the screenshots to understand how I covered concepts in clear.
+
+For a Glance ->
+ ![ES6|Classes](/screenshots/15.classes.png)
