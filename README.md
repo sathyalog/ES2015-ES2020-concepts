@@ -44,7 +44,14 @@ More: https://github.com/tc39/proposal-decorators
     **ES2020 Proposal:** let amount = 1_234_500; 
     More: https://github.com/tc39/proposal-numeric-separator
 
-Please refer the screenshots to understand how I covered concepts in clear.
+Please refer the screenshots folder to understand the concepts in clear.
 
 For a Glance ->
  ![ES6|Classes](/screenshots/15.classes.png)
+
+ ![ES6|Imports/Exports](/screenshots/13.import-export.png)
+
+ ![ES6|Async/Await](/screenshots/16.async-await.png)
+ 
+ ![ES6|Private Methods](/screenshots/18.private-fields-methods.png)
+
