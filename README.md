@@ -6,6 +6,8 @@
 2. `parcel index.html` or `npm run dev`
 3.  Hit https://localhost:1234
 4. For build - `npm run build`
+
+Demo: https://es2020-concepts-sathyalog.netlify.com/
 ___
 
 ### List of Concepts
