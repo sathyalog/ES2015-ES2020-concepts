@@ -3,9 +3,9 @@
 #### How to run?
 
 1. `npm install`
-2. `parcel index.html` or `npm run dev` 
+2. `parcel index.html` or `npm run dev`
 3.  Hit https://localhost:1234
-
+4. For build - `npm run build`
 ___
 
 ### List of Concepts
@@ -41,7 +41,7 @@ More: https://github.com/tc39/proposal-decorators
 
     **Current behavior:** const AMOUNT = 1234500;
 
-    **ES2020 Proposal:** let amount = 1_234_500; 
+    **ES2020 Proposal:** let amount = 1_234_500;
     More: https://github.com/tc39/proposal-numeric-separator
 
 Please refer the screenshots folder to understand the concepts in clear.
@@ -52,6 +52,5 @@ For a Glance ->
  ![ES6|Imports/Exports](/screenshots/13.import-export.png)
 
  ![ES6|Async/Await](/screenshots/16.async-await.png)
- 
- ![ES6|Private Methods](/screenshots/18.private-fields-methods.png)
 
+ ![ES6|Private Methods](/screenshots/18.private-fields-methods.png)
